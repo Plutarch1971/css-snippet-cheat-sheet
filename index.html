@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matthew's CSS Snippet Cheat Sheet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <header class="column linear-gradient-background">
+        <h1>Matthew's CSS Snippet Cheat Sheet</h1>
+        <br>
+        <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanet home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.  
+        </p>
+    </header>
+    <br>
+    <main class="container">
+        <div class="code-card linear-gradient-background"> 
+            <h2 class="card-header">Flexbox Row</h2>
+                <p> Use these trhree properties to create a Flexbox Row layout</p>
+                 <code class="select-all">
+                    .row {
+                    display: flex;
+                    flex-direction>: row;
+                    flex-wrap; wrap;
+                    }
+                 </code>
+            
+            </div>
+            <div class="code-card code-card.linear-gradient-background">
+                <h2 class="card-header">Flexbox Column</h2>
+                <p>Use this to create a Flexbox column layout</p>
+                    <code class="select-all">
+                    .column{
+                     display: flex;
+                    flex-direction: column;
+                    }
+                    </code>
+            </div>
+            
+            <div class="code-card linear-gradient-background">
+                <h2 class="card-header">CSS Grid Layout</h2>
+                <p> Build a 12-column layout using CSS Grid</p>
+                <code class="select-all">
+                    .grid{
+                        display: grid;
+                        grid-template-column:
+                        repeat(12, 1fr);
+                    }
+                </code>
+            </div>
+            <div class="code-card linear-gradient-background">
+                <h2 class="card-header">Linear Gradients</h2>
+                <p>This will create a background linear gradient from</p>
+                    top to bottom.
+                   <code class="select-all">
+                    .linear-gradient-background{
+                      background-image:linear-gradient(
+                        rgba(232,236,0.3) 0% rgba(232,236,0.6) 100%;
+                      )  
+                    }
+                   </code>  
+                
+                </pre>
+            </div>
+            <div class="code-card linear-gradient-background">
+                <h2 class="card-header">Box Transition Glow</h2>
+                <p>Use transition and box shadows to glow on hover.</p>
+                    <code class="select-all">
+                    .code-card .card-header{
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-out;
+                    }
+                    .code-card:hover,
+                    .code-card-hover .card-header{
+                    box-shadow: inset 0px 0px 8px rgba(232, 102,236, 1), 0 0 15px
+                    rgba(232, 102,236, 1);
+                    }
+                    </code>
+            </div>
+            <div class="code-card  linear-gradient-background">
+                <h2 class="card-header">Overlay Card with Title</h2>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    <code class="select-all">
+                    .card-header{
+                    position: relative;
+                    margin-top: -20px
+                    }
+                    </code>
+            </div>
+        
+    </main>
+    <footer class="linear-gradient-background">
+    <!--<p>At size 768px and above, the app should resemble the following image:</p>-->
+        <h3>Made with love &#10084; and CSS</h3>
+    </footer>
+</body>
+</html>
